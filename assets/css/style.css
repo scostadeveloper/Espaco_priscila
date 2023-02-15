@@ -1,10 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
 .body {
     background-color: #F4EFEC;
     font-family: 'Montserrat';
     font-weight: regular;
     font-size: 16px;
-
 }
+
+
 
 .navbar {
     background-color: #d2b08c;
@@ -12,6 +20,8 @@
     font-weight: regular;
     font-size: 16px;
 }
+
+
 
 /*Banner principal*/
 .primeira_pagina {
@@ -40,7 +50,7 @@
     height: 250px;
     margin-left: 40%;
     position: absolute;
-    bottom: 420px;
+    bottom: 400px;
 }
 
 .description {
@@ -64,7 +74,28 @@
     margin-top: 55px;
 }
 
+#button-dsc{
+    background-color: #9D774C;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 20px;
+    width: 216px;
+    height: 44px;
+    text-decoration: none;
+}
+
+#button-dsc:hover{
+    background-color: #9d774cb9;
+}
+
+#link-dsc{
+    text-decoration: none;
+    color: white;
+}
+
 /*PROCEDIMENTOS E RESULTADOS SECTION*/
 .section-cont2 {
     text-align: center;
 }
+
