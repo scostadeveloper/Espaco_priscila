@@ -1,27 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
     text-decoration: none;
+    outline: none;
 }
+
 .body {
-    background-color: #F4EFEC;
     font-family: 'Montserrat';
-    font-weight: regular;
+    font-weight: normal;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 
 
 .navbar {
-    background-color: #d2b08c;
+    background-color: #999b85;
     font-family: 'Montserrat' !important;
     font-weight: regular;
     font-size: 16px;
 }
 
-.main{
+.main {
     background-color: #F4EFEC;
     width: 100%;
     height: auto;
@@ -29,86 +31,88 @@
 
 /*Banner principal*/
 .primeira_pagina {
-    background-image: url('../img/retrato-1apag.png');
+
     width: 100%;
     min-height: calc(100vh - 40px) !important;
     position: relative;
-    background-color: black;
+    background: rgba(0, 0, 0, .5) url('../img/retrato-1apag.png');
     background-repeat: no-repeat;
     background-position: center center;
+    background-blend-mode: darken;
     z-index: 0;
     background-size: cover;
-    opacity: 0.8;
-}
-
-.retangulo {
-    background-color: black;
-    background-size: cover;
-    margin: auto;
-    width: 100%;
-    height: calc(100vh - 40px) !important;
-    opacity: 0.49;
+    opacity: 1;
 }
 
 .logo {
-    height: 250px;
-    margin-left: 40%;
-    position: absolute;
-    bottom: 400px;
+    height: 17vh;
 }
 
 .description {
-    width: 27vw;
-    margin-left: 50px;
-    position: relative;
-    bottom: 400px;
+    width: 50%;
+    margin-left: 60px;
+    margin-top: 4vh;
 }
 
 .description>h1 {
     color: white;
-    height: 120px;
+    /* height: 120px; */
     font-family: 'Montserrat' !important;
-    font-size: 48px;
+    font-size: 42px;
     font-weight: bold;
 }
 
 .description>h2 {
     color: white;
+    font-family: 'Montserrat';
     font-size: 16px;
-    margin-top: 55px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-#button-dsc{
-    background-color: #9D774C;
+#button-dsc {
+    background-color: #999B85;
     color: white;
+    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: normal;
-    margin-top: 20px;
-    width: 216px;
-    height: 44px;
+    margin-top: 15px;
+    /* width: 216px; */
+    /* height: 44px; */
     text-decoration: none;
+    opacity: 1;
+    padding: 1.5vh 2vw;
 }
 
-#button-dsc:hover{
-    background-color: #9d774cb9;
+#button-dsc:hover {
+    background-color: #57584c;
 }
 
-#link-dsc{
+#link-dsc {
     text-decoration: none;
     color: white;
 }
 
 /*PROCEDIMENTOS E RESULTADOS SECTION*/
 .section-cont2 {
-    min-width: 85%;
+    padding: 8vh 2vw;
     height: auto;
     margin: auto;
-    
     text-align: center;
-    margin-top: -180px;
+    background-color: #F4EFEC;
+    font-family: 'Montserrat';
+    
+    font-size: 48px;
+    /* margin-top: -180px; */
 }
 
-.cont-2{
+.section-cont2.h1 {
+
+    margin-top: 50px;
+}
+
+
+.cont-2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -116,44 +120,737 @@
     align-items: center;
 }
 
-.section-cont2>h2{
+.section-cont2>h1 {
+    font-family: 'Montserrat';
     font-size: 48px;
-    font-weight: bold;
-    color: #98734A;
+    font-style: normal;
+    font-weight: 1000;
+    color: #414141;
 }
 
-.item-cont2{
-    background-image: url(../img/arco-para-fotos.png);
+.item-cont2 {
+    background-color: #DDB7AC;
     background-repeat: no-repeat;
-    width: 576px;
-    height: 684px;
-    margin-top: 80px;
+    border-radius: 0px 30px;
+    min-height: calc(0.6*100vh);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: normal;
+    align-items: flex-end;
 }
 
-.item-cont2>h1{
-    position: relative;
-    top: 150px;
+.item-cont2>h1 {
+    position: absolute;
+    
 }
 
-.item-cont2>h2{
+.item-cont2>h2 {
     font-size: 20px;
-    position: relative;
-    top: 360px;
+    font-weight: bold;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-.item-cont2>p{
+.item-cont2>p {
     font-size: 16px;
     position: relative;
-    top: 360px;
 }
 
-.item-cont2>button{
-    background-color: #D4B390;
+.item-cont2>img{
+    /* margin-top:3%; */
+    align-self: center;
+    width: 99.8%;
+    height: 99.8%;
+    padding: 2.5% 0.2%;
+}
+
+.item-cont2>button {
+    background-color: #999B85;
     color: white;
     font-size: 20px;
     border-radius: 10px;
     width: 150px;
     height: 55px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.item-cont2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.item-cont2 a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*SESSAO QUEM SOMOS*/
+.quemsomos-cont {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    background-color: #DDB7AC;
+    color: white;
+    width: 100%;
+    
+}
+
+.row{
+    overflow-x: hidden !important;
+}
+
+.retangulos-quem-somos1{
+    position: absolute;
+    right:0px;
+    width: 35%;
+    align-self: flex-start;
+
+}
+
+.retangulos-quem-somos2{
+    position: absolute;
+    right:0px;
+    width: 45%;
+    align-self: flex-end;
+    left: 0px;
+    transform: translateY(150%);
+
+}
+
+
+.quemsomos-imgs {
     position: relative;
-    top: 360px;
+    width: 100%;
+    overflow-x: visible !important;
+}
+
+
+
+.certificados {
+    position: absolute;
+    background-image: url(../img/certificados.png);
+    width: 240px;
+    height: 146px;
+    left: 10px;
+    bottom: 50px;
+}
+
+.button-quem-somos{
+    position: absolute;
+    background-color: #F4EFEC;
+    color: black;
+    border-radius: 10px;
+    left: 25vw;
+    bottom: 85px;
+    padding: 6px 25px;
+    overflow-x: visible !important;
+}
+
+.button-quem-somos2{
+    position: absolute;
+    background-color: #f0d9d1;
+    color: black;
+    border-radius: 10px;
+    left: 30vw;
+    bottom: 50px;
+    padding: 7px 20px;
+    overflow-x: visible !important;
+}
+
+
+/* A CLINICA */
+.clinicaCont {
+    background-color: #F4EFEC;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+
+.clinicaCont>img {
+    background-color: #F4EFEC;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 40px;
+    margin: 0px 100px;
+}
+
+.clinicaCont h2 {
+    color: #414141;
+    font-family: 'Montserrat';
+
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 7vh;
+}
+
+
+
+.clinicaCont p {
+    font-size: 1rem;
+    color: #414141;
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.retangulos-23{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    position: absolute;
+    width: 45%;
+    align-self: flex-end;
+    right: 0px;
+    transform: translateY(80%);
+    z-index: 0;
+}
+
+.retangulos-2{
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 45%;
+    align-self: flex-start;
+    left: 0px;
+    transform: translateY(70%);
+    z-index: 0;
+}
+
+.retangulos-3{
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 38%;
+    align-self: flex-end;
+    right: 0px;
+    transform: translateY(90%);
+    z-index: 0;
+}
+
+
+/* SESSAO FALE CONOSCO */
+.faleCont {
+    background-color: #F4EFEC;
+    padding-top: 0px;
+    padding-bottom: 100px;
+    font-family: 'Montserrat';
+
+}
+
+.mapa {
+    color: #414141;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.faleCont h2 {
+    color: #414141;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 7vh;
+}
+
+.faleCol-1 {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.74);
+    height: 50vh;
+    margin-left: 140px;
+    padding: 0;
+}
+
+.faleCol-2 {
+    font-size: 1rem;
+    color: #414141;
+    height: 40vh;
+}
+
+.faleCol-2 address {
+    font-weight: 600;
+}
+
+.faleCol-2 button {
+    background-color: #999B85;
+    width: 18vw;
+    height: 7vh;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.faleCol-2 button a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#telContato {
+    font-size: 1.2rem;
+}
+
+
+
+
+/* FOOTER */
+.footerCont {
+    background-color: #191818;
+    z-index: 20;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.footerCont .logoFooter {
+    margin-top: 5px;
+}
+
+.insta-icon img {
+    padding-right: 10px;
+    width: 40px;
+}
+
+.insta-icon a {
+    color: white;
+    text-decoration: none;
+}
+
+.wppCont img {
+    padding-right: 10px;
+    width: 40px;
+}
+
+.wppCont a {
+    color: white;
+    text-decoration: none;
+}
+
+.iconLocal {
+    color: white;
+}
+
+.iconLocal img {
+    padding-right: 10px;
+    width: 40px;
+}
+
+.iconLocal address {
+    padding-top: 15px;
+}
+
+/*BOTÃO DE WHATSAPP FLUTUANDO*/
+.bottomwhats a{
+    color: white;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #505050;
+    z-index:1000;
+}
+
+.my-float{
+	margin-top:10px;
+}
+
+.fa-whatsapp {
+    color: white;
+    margin-top: 16px;
+}
+
+.fotos-clinica-cel{
+    display: none;
+}
+
+.show-phone-only{
+    display: none;
+}
+
+
+
+/* BANNER RESPONSIVE */
+@media only screen and (max-width: 767px) {
+
+    /* celular */
+    .logo {
+        height: 15vh;
+    }
+
+    #button-dsc{
+        padding: 1.5vh 4vw;
+    }
+
+    .primeira_pagina{
+        position: relative;
+        background: rgba(0, 0, 0, .6) url('../img/retrato-primeira-pag.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-blend-mode: darken;
+        z-index: 0;
+        background-size: cover;
+        opacity: 1;
+    }
+    
+
+    .description {
+        width: 95vw;
+        margin-left: 10px;
+        margin-top: 70px;
+        text-align: center;
+        /* bottom: 400px; */
+    }
+
+    .description>h1 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .description>h2 {
+        margin-top: 20px;
+    }
+
+    
+
+    .section-cont2>h1 {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 1000;
+        color: #414141;
+    }
+
+    .item-cont2 {
+        background-color: #DDB7AC;
+        background-repeat: no-repeat;
+        /* width: 20vw; */
+        /* height: 684px; */
+        border-radius: 0px 30px;
+        min-height: 2vh;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: normal;
+        margin: 4vh 4vw !important;
+        padding: 0px 0px !important;
+        color: white;
+    
+    }
+    .item-cont2>img{
+        width: 101%;
+        height: 25vh;
+        object-fit: cover;
+        border-radius: 0px 30px;
+        padding: 0px 0px !important;
+        transform: translateX(8px) translateY(8px);
+        opacity:1;
+        background-color: #DDB7AC;
+        border: none;
+        filter: brightness(50%);
+    }
+
+    .item-cont2>h2{
+        font-size: 14px;
+    }
+
+    .item-cont2>button{
+        font-size: 14px;
+        width: 30vw;
+        height: 3vh;
+        border-radius: 5px;
+    }
+
+
+    .row{
+        margin: 0px!important;
+    }
+
+    .float{
+        position:fixed;
+        width:70px;
+        height:70px;
+        bottom:55px;
+        right:25px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:100px;
+        text-align:center;
+        font-size:35px;
+        box-shadow: 2px 2px 3px #505050;
+        z-index:1000;
+    }
+
+    .my-float{
+        margin-top:17px;
+    }
+
+    .priscilla {
+        width: 80vw;
+        margin-left: 5vw;
+    }
+    .degrade{
+        position: absolute;
+        bottom: -1px;
+        width: 90vw;
+        display: block !important;
+    }
+
+    .certificados {
+        position: absolute;
+        background-image: url(../img/certificados.png);
+        background-position: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 8vh;
+        left: 15px;
+        bottom: 60px;
+        object-fit:none;
+    }
+    .button-quem-somos{
+        font-size: 12px;
+        left: 38vw;
+        bottom: 110px;
+    }
+    .button-quem-somos2{
+        font-size: 12px;
+        left: 45vw;
+        bottom: 85px;
+    }
+
+    .quem-somos-texto{
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+        text-align: center;
+    }
+
+    .quem-somos-texto>h1{
+        font-size: 30px;
+        position: relative;
+    }
+
+    .quem-somos-texto>p{
+        font-size: 18px;
+        position: relative;
+    }
+
+    .fotos-clinica{
+        display: none;
+    }
+
+    .fotos-clinica-cel{
+        display: block;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .clinicaCont>h2 {
+
+        font-size: 32px;
+        text-align: center;
+        padding-top: 6vh;
+        padding-bottom: 4.5vh;
+    }
+
+    .clinicaCont>p {
+        width:84vw;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+
+    .faleCont {
+        text-align: center;
+        padding-bottom: 3vh;
+    }
+    
+
+    .faleCont>h2{
+        font-size: 32px;
+        padding-top: 6vh;
+        padding-bottom: 4.5vh;
+    }
+
+    .faleCol-1{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 5vh;
+        max-height: 30vh;
+    }
+
+    .faleCol-2{
+        margin-left: 2vw !important;
+        margin-right: 2vw;
+        margin-bottom: 5vh;
+        /* min-height: 25; */
+        height: auto;
+    }
+
+    .faleCol-2>button a{
+        font-size: 18px !important;
+        margin: 0px !important;
+        
+    }
+
+    .faleCol-2>button{
+        align-self: center;
+        display: block;
+        width: 50vw;
+        height: 5vh;
+        border-radius: 10px;
+        position: relative;
+        margin: 0px auto!important;
+    }
+    .hide-phone{
+        display: none;
+    }
+
+    .show-phone-only{
+        display: block;
+    }
+    .logoFooter{
+        width: 40vw;
+        position: relative;
+        
+    }
+    .logoFooter>img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+
+    .icon img {
+        padding-right: 0px;
+        height: 6vh;
+        width: auto;
+        align-self: center;
+        justify-self: center;
+        padding: 2vw;
+    }
+    .retangulos-2{
+        display: none;
+    }
+
+    .retangulos-23{
+        display: none;
+    }
+
+    .retangulos-3, .retangulos-quem-somos1, .retangulos-quem-somos2{
+        display: none;
+    }
+
+    
+
+    .grupo_24{
+        position: absolute;
+        right:-5vw;
+        width: 50%;
+        /* top: 10vh; */
+        align-self: flex-end;
+    }
+
+    .grupo_25{
+        position: absolute;
+        left:-100px;
+        width: 168px !important;
+        height: 417px !important;
+        /* top: 10vh; */
+        align-self: flex-start;
+    }
+    .grupo_26{
+        position: absolute;
+        right: 0px;
+        transform: translateX(0px) translateY(-200px);
+        width: 200px !important;
+        height: 417px !important;
+        /* top: 2vh; */
+        align-self: flex-start;
+    }
+
+    .grupo_28{
+        position: absolute;
+        left: 0px;
+        transform: translateX(-100px) translateY(-250px);
+        width: 200px !important;
+        height: 417px !important;
+        /* top: 2vh; */
+        align-self: flex-start;
+    }
+
+
+    /* .contpris {
+        background-color: #af8f6c;
+    } */
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1400px) {
+    .description {
+        width: 70vw;
+        margin-left: 10px;
+        margin-top: 70px;
+
+        /* bottom: 400px; */
+    }
+
+}
+
+
+
+/* A CLINICA  COLUNAS RESPONSIVAS DE IMAGENS */
+@media only screen and (max-width: 767px) {
+
+    /* celular */
+    .coluna1 {
+        margin: 0;
+        margin-bottom: 2vh;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* celular */
+    .coluna2 {
+        margin: 0;
+        margin-bottom: 2vh;
+    }
 }
