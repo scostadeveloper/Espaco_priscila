@@ -6,6 +6,7 @@
     text-decoration: none;
     outline: none;
     font-family: 'Montserrat';
+    overflow-x: hidden;
 }
 
 body {
@@ -28,7 +29,9 @@ body {
     font-weight: 800;
 }
 
-
+.fotos-procedimentos{
+    display: flex; justify-content: space-around; padding: 30px 15%; justify-self: center;
+}
 /* SESSAO 2 */
 .section02 {
     width: 100%;
@@ -60,7 +63,14 @@ body {
 .imgcont img {
     width: 100%;
 }
+.retangulos-quem-somos2{
+    position: absolute;
+    width: 45%;
+    align-self: flex-end;
+    left: 0px;
+    transform: translateY(60%);
 
+}
 .secondCont {
     display: flex;
     flex-direction: column;
@@ -95,15 +105,26 @@ body {
         width: 100%;
         object-fit: cover;
     }
+    .imgLogo{
+        max-width: 50%;
+    }
+
+    .contWhat{
+        margin-top: 2vh !important;
+    }
+    .contWhat h2 {
+        font-size: 32px;
+        font-weight: 800;
+    }
 }
 
 
 
 /* SESSAO 03 */
 .section03 {
-    background-color: #DDB7AC;
-    color: white;
-    height: 100vh;
+    background-color: #F0D9D1;
+    color: #CE9C8D;
+    height: 60vh;
     width: 100%;
     margin-top: 100px;
 }
@@ -120,17 +141,39 @@ body {
 }
 
 .container-item-2 .btn {
-    background-color: white;
-    color: black;
+    background-color: #CE9C8D;
+    color: white;
 
     box-shadow: 0px 3px 6px #00000029;
-    border-radius: 10px;
-    width: 35%;
+    border-radius: 5px;
+}
+
+.contWhat .btn{
+    background-color: #CE9C8D;
+    color: white;
+    padding: 7px 10px ;
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 767px) {
     .container-item-2 .btn {
-        width: 55vw;
+        background-color: #CE9C8D;
+        
+    }
+
+    
+    .container-item-1 h2 {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 1;
+        padding-bottom: 5vh;
+    }
+    .section03 {
+        background-color: #F0D9D1;
+        color: #CE9C8D;
+        height: 80vh;
+        width: 100%;
+        margin-top: 40px;
     }
 }
 
@@ -347,14 +390,30 @@ body {
 
 /* A CLINICA RESPONSIVE */
 @media only screen and (max-width: 767px) {
-
+    .float {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 24px;
+        box-shadow: 2px 2px 3px #505050;
+        z-index: 1000;
+    }
+    
     .my-float {
-        margin-top: 17px;
+        margin-top: 9px;
+        margin-left: 0px;
     }
 
     .fotos-clinica {
         display: none;
     }
+    
 
     .fotos-clinica-cel {
         display: block;
@@ -364,21 +423,72 @@ body {
         width: 100%;
         height: 100%;
     }
-
+    .mySwiper{
+        text-align: center;
+        font-size: 18px;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: block;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
     .swiper-slide {
         text-align: center;
         font-size: 18px;
+        height: 100%;
         background: transparent;
-        display: flex;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: block;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .img-wrapper{
+        text-align: center;
+        font-size: 18px;
+        height: 100%;
+        background: transparent;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
         align-items: center;
     }
 
     .swiper-slide img {
-        display: block;
+        object-position: center center;
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
 
     .clinicaCont>h2 {
@@ -486,12 +596,15 @@ body {
         align-self: flex-end;
     }
 
-    .grupo_25 {
+    .grupo_procedimentos_cel {
         position: absolute;
+        background-color: transparent !important;
         left: -100px;
         width: 168px !important;
         height: 417px !important;
         align-self: flex-start;
+        transform: translateY(-100px);
+        z-index: 0;
     }
 
     .grupo_26 {

@@ -1,0 +1,601 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F4EFEC;
+    font-size: 1rem;
+}
+
+/* NAV / MENU  */
+.navbar {
+    background-color: #999b85;
+    font-family: 'Montserrat' !important;
+    font-weight: regular;
+    font-size: 16px;
+}
+
+/*      TITLE    */
+.contWhat h2 {
+    color: #414141;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.fotos-procedimentos{
+    display: flex; justify-content: space-around; padding: 30px 15%; justify-self: center;
+}
+/* SESSAO 2 */
+.section02 {
+    width: 100%;
+    height: auto;
+}
+
+.initialCont {
+    display: flex;
+    gap: 60px;
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.bigImage {
+    width: 70%;
+}
+
+.bigImage img {
+    object-fit: cover;
+}
+
+.imgCont {
+    height: 100%;
+    width: 100%;
+}
+
+.imgcont img {
+    width: 100%;
+}
+.retangulos-quem-somos2{
+    position: absolute;
+    width: 45%;
+    align-self: flex-end;
+    left: 0px;
+    transform: translateY(50%);
+
+}
+.secondCont {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+@media only screen and (max-width:1024px) {
+    .initialCont {
+        flex-wrap: wrap;
+    }
+
+
+    .secondCont {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .secondCont {
+        flex-direction: column;
+    }
+
+    .bigImage img {
+        width: 92vw;
+        margin-bottom: -30px;
+    }
+
+    .imgCont img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .imgLogo{
+        max-width: 50%;
+    }
+
+    .contWhat{
+        margin-top: 2vh !important;
+    }
+    .contWhat h2 {
+        font-size: 32px;
+        font-weight: 800;
+    }
+}
+
+
+
+/* SESSAO 03 */
+.section03 {
+    background-color: #DDB7AC;
+    color: white;
+    height: 60vh;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container-item-1 h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.container-item-2 p {
+    line-height: 2;
+    font-size: 1rem;
+}
+
+.container-item-2 .btn {
+    background-color: #F0D9D1;
+    color: black;
+
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+}
+
+.contWhat .btn{
+    background-color: #DDB7AC;
+    color: white;
+    padding: 7px 10px ;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+    .container-item-2 .btn {
+        background-color: #F0D9D1;
+        
+    }
+
+    
+    .container-item-1 h2 {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 1;
+        padding-bottom: 5vh;
+    }
+    .section03 {
+        background-color: #DDB7AC;
+        color: #F4EFEC;
+        height: 100vh;
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+
+/* A CLINICA */
+.clinicaCont {
+    background-color: #F4EFEC;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.clinicaCont>img {
+    background-color: #F4EFEC;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 40px;
+    margin: 0px 100px;
+}
+
+.clinicaCont h2 {
+    color: #414141;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 7vh;
+}
+
+.clinicaCont p {
+    font-size: 1rem;
+    color: #414141;
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.retangulos-23 {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    position: absolute;
+    width: 45%;
+    align-self: flex-end;
+    right: 0px;
+    transform: translateY(80%);
+    z-index: 0;
+}
+
+.retangulos-2 {
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 45%;
+    align-self: flex-start;
+    left: 0px;
+    transform: translateY(70%);
+    z-index: 0;
+}
+
+.retangulos-3 {
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 38%;
+    align-self: flex-end;
+    right: 0px;
+    transform: translateY(90%);
+    z-index: 0;
+}
+
+
+/* SESSAO FALE CONOSCO */
+.faleCont {
+    background-color: #F4EFEC;
+    padding-top: 0px;
+    padding-bottom: 100px;
+    font-family: 'Montserrat';
+}
+
+.mapa {
+    color: #414141;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.faleCont h2 {
+    color: #414141;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 7vh;
+}
+
+.faleCol-1 {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.74);
+    height: 50vh;
+    margin-left: 140px;
+    padding: 0;
+}
+
+.faleCol-2 {
+    font-size: 1rem;
+    color: #414141;
+    height: 40vh;
+}
+
+.faleCol-2 address {
+    font-weight: 600;
+}
+
+.faleCol-2 .btn {
+    background-color: #999B85;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#telContato {
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
+.footerCont {
+    background-color: #191818;
+    z-index: 20;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.footerCont .logoFooter {
+    margin-top: 5px;
+}
+
+.insta-icon img {
+    padding-right: 10px;
+    width: 40px;
+}
+
+.insta-icon a {
+    color: white;
+    text-decoration: none;
+}
+
+.wppCont img {
+    padding-right: 10px;
+    width: 40px;
+}
+
+.wppCont a {
+    color: white;
+    text-decoration: none;
+}
+
+.iconLocal {
+    color: white;
+}
+
+.iconLocal img {
+    padding-right: 10px;
+    width: 40px;
+}
+
+.iconLocal address {
+    padding-top: 15px;
+}
+
+/*BOTÃO DE WHATSAPP FLUTUANDO*/
+.bottomwhats>a {
+    color: white;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #505050;
+    z-index: 1000;
+}
+
+.my-float {
+    margin-top: 10px;
+}
+
+.fa-whatsapp {
+    color: white;
+    margin-top: 16px;
+}
+
+.fotos-clinica-cel {
+    display: none;
+}
+
+.show-phone-only {
+    display: none;
+}
+
+/* A CLINICA RESPONSIVE */
+@media only screen and (max-width: 767px) {
+    .float {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #505050;
+        z-index: 1000;
+    }
+    
+    .my-float {
+        margin-top: 6px;
+        margin-left: 1px;
+    }
+
+    .fotos-clinica {
+        display: none;
+    }
+    
+
+    .fotos-clinica-cel {
+        display: block;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .clinicaCont>h2 {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 6vh;
+        padding-bottom: 4.5vh;
+    }
+
+    .clinicaCont>p {
+        width: 84vw;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+
+    .faleCont {
+        text-align: center;
+        padding-bottom: 3vh;
+    }
+
+    .faleCont>h2 {
+        font-size: 32px;
+        padding-top: 6vh;
+        padding-bottom: 4.5vh;
+    }
+
+    .faleCol-1 {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 5vh;
+        max-height: 30vh;
+    }
+
+    .faleCol-2 {
+        margin-left: 2vw !important;
+        margin-right: 2vw;
+        margin-bottom: 5vh;
+        height: auto;
+    }
+
+    .faleCol-2>button a {
+        font-size: 18px !important;
+        margin: 0px !important;
+    }
+
+    .faleCol-2>button {
+        align-self: center;
+        display: block;
+        width: 50vw;
+        height: 5vh;
+        border-radius: 10px;
+        position: relative;
+        margin: 0px auto !important;
+    }
+
+    .hide-phone {
+        display: none;
+    }
+
+    .show-phone-only {
+        display: block;
+    }
+
+    .logoFooter {
+        width: 40vw;
+        position: relative;
+
+    }
+
+    .logoFooter>img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+
+    .icon img {
+        padding-right: 0px;
+        height: 6vh;
+        width: auto;
+        align-self: center;
+        justify-self: center;
+        padding: 2vw;
+    }
+
+    .retangulos-2 {
+        display: none;
+    }
+
+    .retangulos-23 {
+        display: none;
+    }
+
+    .retangulos-3,
+    .retangulos-quem-somos1,
+    .retangulos-quem-somos2 {
+        display: none;
+    }
+
+    .grupo_24 {
+        position: absolute;
+        right: -5vw;
+        width: 50%;
+        align-self: flex-end;
+    }
+
+    .grupo_25 {
+        position: absolute;
+        left: -100px;
+        width: 168px !important;
+        height: 417px !important;
+        align-self: flex-start;
+    }
+
+    .grupo_26 {
+        position: absolute;
+        right: 0px;
+        transform: translateX(0px) translateY(-200px);
+        width: 200px !important;
+        height: 417px !important;
+        align-self: flex-start;
+    }
+
+    .grupo_28 {
+        position: absolute;
+        left: 0px;
+        transform: translateX(-100px) translateY(-250px);
+        width: 200px !important;
+        height: 417px !important;
+        align-self: flex-start;
+    }
+
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1400px) {
+    .description {
+        width: 70vw;
+        margin-left: 10px;
+        margin-top: 70px;
+    }
+}
+
+/* A CLINICA  COLUNAS RESPONSIVAS DE IMAGENS */
+@media only screen and (max-width: 767px) {
+
+    /* celular */
+    .coluna1 {
+        margin: 0;
+        margin-bottom: 2vh;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* celular */
+    .coluna2 {
+        margin: 0;
+        margin-bottom: 2vh;
+    }
+}
